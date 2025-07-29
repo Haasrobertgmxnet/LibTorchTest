@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\7d1f415740d97dd1cfef33c87a330c41\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{5AE469FA-31B7-3BAC-B7D2-E6E5D61115CD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

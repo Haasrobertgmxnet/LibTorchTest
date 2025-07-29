@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A4964712-B547-32A9-896C-EE1D6C98F4DF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\7d1f415740d97dd1cfef33c87a330c41\generate.stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/haasr/source/repos/LibTorchTest -BC:/Users/haasr/source/repos/LibTorchTest/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/haasr/source/repos/LibTorchTest/build/LibTorchTest.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\Intel\oneAPI\mkl\2025.1\lib\cmake\mkl\MKLConfig.cmake;C:\Program Files (x86)\Intel\oneAPI\mkl\2025.1\lib\cmake\mkl\MKLConfigVersion.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;C:\Users\haasr\source\repos\LibTorchTest\CMakeLists.txt;C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\3.29.2\CMakeSystem.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\Caffe2Config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\Caffe2Targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\Caffe2Targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\Caffe2Targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\gflags.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\glog.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\mkl.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\protobuf.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\utils.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\eigen3\Eigen3Config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\eigen3\Eigen3ConfigVersion.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\eigen3\Eigen3Targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-config-version.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-nonamespace-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-nonamespace-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-nonamespace-targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\vcpkg-cmake-wrapper.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-config-version.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\torch\TorchConfig.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\torch\TorchConfigVersion.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\haasr\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/haasr/source/repos/LibTorchTest -BC:/Users/haasr/source/repos/LibTorchTest/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/haasr/source/repos/LibTorchTest/build/LibTorchTest.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\Intel\oneAPI\mkl\2025.1\lib\cmake\mkl\MKLConfig.cmake;C:\Program Files (x86)\Intel\oneAPI\mkl\2025.1\lib\cmake\mkl\MKLConfigVersion.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\SelectLibraryConfigurations.cmake;C:\Users\haasr\source\repos\LibTorchTest\CMakeLists.txt;C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\3.29.2\CMakeSystem.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\Caffe2Config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\Caffe2Targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\Caffe2Targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\Caffe2Targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\gflags.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\glog.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\mkl.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\protobuf.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\caffe2\public\utils.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\eigen3\Eigen3Config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\eigen3\Eigen3ConfigVersion.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\eigen3\Eigen3Targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-config-version.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-nonamespace-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-nonamespace-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-nonamespace-targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\gflags-targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\gflags\vcpkg-cmake-wrapper.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-config-version.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\glog\glog-targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\torch\TorchConfig.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\torch\TorchConfigVersion.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;C:\Users\haasr\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;C:\Users\haasr\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\haasr\source\repos\LibTorchTest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

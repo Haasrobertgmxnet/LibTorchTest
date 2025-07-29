@@ -16,6 +16,9 @@ find_package(Torch REQUIRED)
 # Erstelle executable
 add_executable(LibTorchTest main.cpp)
 
+# Include-Verzeichnis hinzufuegen
+target_include_directories(LibTorchTest PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/build)
+
 # Link libraries
 target_link_libraries(LibTorchTest ${TORCH_LIBRARIES})
 
